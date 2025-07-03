@@ -1,3 +1,22 @@
+output "cluster_names" {
+ value       = var.cluster_names
+ description = "List of create cluster names"
+}
+
+output "cluster_id" {
+ value       = module.deploy-arch-ibm-slz-ocp.workload_cluster_id
+ description = "List of create cluster names"
+}
+
+output "ibmcloud_api_key" {
+ value       = var.ibmcloud_api_key
+ description = "List of ip cluster names"
+}
+output "region" {
+ value       = var.region
+ description = "Region Name"
+}
+
 ############
 # This is a sample output file. Customize this file to fit your use case.
 ############
@@ -102,22 +121,6 @@
 #  description = "A list of the names of the VPC"
 #}
 
-output "cluster_names" {
- value       = var.cluster_names
- description = "List of create cluster names"
-}
-
-
-output "cluster_id" {
- value       = module.deploy-arch-ibm-slz-ocp.workload_cluster_id
- description = "List of create cluster names"
-}
-
-output "ibmcloud_api_key" {
- value       = var.ibmcloud_api_key
- description = "List of ip cluster names"
- 
-}
 #output "transit_gateway_name" {
 #  value       = var.transit_gateway_name
 #  description = "The name of the transit gateway"
