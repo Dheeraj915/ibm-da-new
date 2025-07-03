@@ -1,0 +1,437 @@
+{
+	"products": [
+		{
+			"name": "deploy-arch-ibm-slz-ocp",
+			"product_kind": "solution",
+			"tags": [
+				"compute",
+				"ibm_created"
+			],
+			"keywords": [
+				"vpc",
+				"slz",
+				"IaC",
+				"infrastructure as code",
+				"terraform",
+				"solution",
+				"Red Hat OpenShift Container Platform",
+				"OCP"
+			],
+			"short_description": "",
+			"long_description": "",
+			"offering_docs_url": "https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-overview#overview-ocp",
+			"offering_icon_url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-ibm-landing-zone/main/.docs/images/deploy-arch-slz-ocp-lt.svg",
+			"features": [
+				{
+					"title_i18n": {
+						"de": "Erstellt Open Shift Container Platform-Cluster für Workloads",
+						"en": "Creates Open Shift Container Platform clusters for workloads",
+						"es": "Crea clústeres de Open Shift Container Platform para cargas de trabajo",
+						"fr": "Crée des clusters Open Shift Container Platform pour les charges de travail",
+						"it": "Crea cluster di Open Shift Container Platform per carichi di lavoro",
+						"ja": "ワークロード用のオープン・シフト・コンテナ・プラットフォームのクラスターを作成する",
+						"ko": "워크로드를 위한 시프트 컨테이너 플랫폼 클러스터를 생성합니다.",
+						"pt-BR": "Cria clusters Open Shift Container Platform para as cargas de serviço",
+						"zh-Hans": "为工作负载创建 Open Shift Container Platform 集群",
+						"zh-Hant": "為工作負載建立 Open Shift Container Platform 叢集"
+					},
+					"description_i18n": {
+						"de": "Erstellt und konfiguriert einen oder mehrere Cluster zur Verarbeitung von Workloads. Sie können die Version und die Clustergröße angeben.",
+						"en": "Creates and configures one or more clusters to handle workloads. You can specify the version and cluster size.",
+						"es": "Crea y configura uno o varios clústeres para manejar cargas de trabajo. Puede especificar la versión y el tamaño del clúster.",
+						"fr": "Crée et configure un ou plusieurs clusters pour gérer les charges de travail. Vous pouvez spécifier la version et la taille du cluster.",
+						"it": "Crea e configura uno o più cluster per gestire i carichi di lavoro. È possibile specificare la versione e la dimensione cluster.",
+						"ja": "ワークロードを処理する 1 つ以上のクラスターを作成して構成します。 バージョンとクラスター・サイズを指定できます。",
+						"ko": "워크로드를 처리할 하나 이상의 클러스터를 만들고 구성합니다. 사용자가 버전 및 클러스터 크기를 지정할 수 있습니다.",
+						"pt-BR": "Cria um ou mais clusters para manipular as cargas de trabalho. Pode-se especificar a versão e o tamanho do cluster.",
+						"zh-Hans": "创建并配置一个或多个集群以处理工作负载。 您可以指定版本和集群大小。",
+						"zh-Hant": "建立並配置一個以上叢集以處理工作負載。 您可以指定版本和叢集大小。"
+					}
+				},
+				{
+					"title_i18n": {
+						"de": "Erstellt Worker-Pools",
+						"en": "Creates worker pools",
+						"es": "Crea agrupaciones de nodos trabajadores",
+						"fr": "Crée des pools de nœuds worker",
+						"it": "Crea pool di lavoro",
+						"ja": "ワーカー・プールを作成する",
+						"ko": "작업자 풀 작성",
+						"pt-BR": "Cria conjuntos de trabalhadores",
+						"zh-Hans": "创建工作程序池",
+						"zh-Hant": "建立工作者節點儲存區"
+					},
+					"description_i18n": {
+						"de": "Mit Worker-Pools können Sie Workerknoten mit ähnlichen Konfigurationen (beispielsweise Rechenressourcen und Verfügbarkeitszonen) gruppieren und verwalten.",
+						"en": "With worker pools, you can group and manage worker nodes with similar configurations, such as compute resources and availability zones.",
+						"es": "Con las agrupaciones de nodos trabajadores, puede agrupar y gestionar nodos trabajadores con configuraciones similares, como por ejemplo recursos de cálculo y zonas de disponibilidad.",
+						"fr": "Avec les pools de nœuds worker, vous pouvez regrouper et gérer des nœuds worker avec des configurations similaires, telles que des ressources de traitement et des zones de disponibilité.",
+						"it": "Con pool di worker pools, puoi raggruppare e gestire i nodi di lavoro con configurazioni simili, come le risorse di calcolo e le zone di disponibilità.",
+						"ja": "ワーカー・プールを使用すると、類似した構成 (コンピュート・リソースやアベイラビリティー・ゾーンなど) のワーカー・ノードをグループ化して管理することができます。",
+						"ko": "작업자 풀을 사용하면 계산 리소스 및 가용성 영역과 같은 유사한 구성으로 작업자 노드를 그룹화하고 관리할 수 있습니다.",
+						"pt-BR": "Com conjuntos de trabalhadores, pode-se agrupar e gerenciar nós do trabalhador com configurações semelhantes, como recursos computacionais e zonas de disponibilidade.",
+						"zh-Hans": "通过工作程序池，您可以对具有类似配置（例如计算资源和可用性区域）的工作程序节点进行分组和管理。",
+						"zh-Hant": "使用工作者節點儲存區，您可以分組及管理具有類似配置（例如計算資源及可用性區域）的工作者節點。"
+					}
+				},
+				{
+					"title_i18n": {
+						"de": "Konfiguriert Teilnetze für Container",
+						"en": "Configures subnets for containers",
+						"es": "Configura subredes para contenedores",
+						"fr": "Configure les sous-réseaux pour les conteneurs",
+						"it": "Configura le sottoreti per i contenitori",
+						"ja": "コンテナーのサブネットを構成する",
+						"ko": "컨테이너에 대한 서브넷을 구성합니다.",
+						"pt-BR": "Configura sub-redes para contêineres",
+						"zh-Hans": "配置容器的子网",
+						"zh-Hant": "配置容器的子網路"
+					},
+					"description_i18n": {
+						"de": "Konfiguriert die Teilnetze für den Cluster und gibt die Teilnetze an, in denen die Workerknoten bereitgestellt werden sollen",
+						"en": "Configures the subnets for the cluster, and specifies the subnets to deploy the worker nodes in.",
+						"es": "Configura las subredes para el clúster y especifica las subredes en las que desplegar los nodos trabajadores.",
+						"fr": "Configure les sous-réseaux du cluster et spécifie les sous-réseaux dans lesquels déployer les nœuds worker.",
+						"it": "Configura le sottoreti del cluster e specifica le sottoreti in cui distribuire i nodi di lavoro.",
+						"ja": "クラスターのサブネットを構成し、ワーカー・ノードをデプロイするサブネットを指定します。",
+						"ko": "클러스터에 대한 서브넷을 구성하고 작업자 노드를 배치할 서브넷을 지정합니다.",
+						"pt-BR": "Configura as sub-redes do cluster e as especifica em quais nós do trabalhador deverão ser implementadas.",
+						"zh-Hans": "配置集群的子网，并指定要在其中部署工作程序节点的子网。",
+						"zh-Hant": "配置叢集的子網路，並指定要在其中部署工作者節點的子網路。"
+					}
+				},
+				{
+					"title_i18n": {
+						"de": "Unterstützt private und öffentliche Endpunkte",
+						"en": "Supports private and public endpoints",
+						"es": "Da soporte a puntos finales privados y públicos",
+						"fr": "Prend en charge les nœuds finaux privés et publics",
+						"it": "Supporta endpoint pubblici e privati",
+						"ja": "プライベート・エンドポイントとパブリック・エンドポイントをサポートする",
+						"ko": "개인 및 공용 엔드포인트를 지원합니다.",
+						"pt-BR": "Oferece suporte para terminais privados e públicos",
+						"zh-Hans": "支持专用端点和公共端点",
+						"zh-Hant": "支援專用和公用端點"
+					},
+					"description_i18n": {
+						"de": "Konfiguriert private und öffentliche Endpunkte für den Cluster.",
+						"en": "Configures private and public endpoints for the cluster.",
+						"es": "Configura puntos finales privados y públicos para el clúster.",
+						"fr": "Configure des nœuds finaux privés et publics pour le cluster.",
+						"it": "Configura endpoint pubblici e privati per il cluster.",
+						"ja": "クラスターのプライベート・エンドポイントとパブリック・エンドポイントを構成します。",
+						"ko": "클러스터에 대한 개인 및 공용 엔드포인트를 구성합니다.",
+						"pt-BR": "Configura os terminais privados e públicos para o cluster.",
+						"zh-Hans": "为集群配置专用端点和公共端点。",
+						"zh-Hant": "配置叢集的專用和公用端點。"
+					}
+				},
+				{
+					"title_i18n": {
+						"de": "Konfiguriert Ingress",
+						"en": "Configures ingress",
+						"es": "Configura Ingress",
+						"fr": "Configure Ingress",
+						"it": "Configura ingresso",
+						"ja": "入口を構成する",
+						"ko": "Ingress 구성",
+						"pt-BR": "Configura o ingresso",
+						"zh-Hans": "配置入口",
+						"zh-Hant": "配置入口"
+					},
+					"description_i18n": {
+						"de": "Konfiguriert den Ingress-Controller für den Cluster, der für die Weiterleitung des externen Datenverkehrs an die entsprechenden Services im Cluster verantwortlich ist",
+						"en": "Configures the ingress controller for the cluster, responsible for routing external traffic to the appropriate services within the cluster.",
+						"es": "Configura el controlador de Ingress para el clúster, responsable de direccionar el tráfico externo a los servicios adecuados dentro del clúster.",
+						"fr": "Configure le contrôleur Ingress du cluster qui se charge d'acheminer le trafic externe vers les services appropriés dans le cluster.",
+						"it": "Configura il controller d'ingresso per il cluster, responsabile dell'instradamento del traffico esterno ai servizi appropriati all'interno del cluster.",
+						"ja": "クラスター内の適切なサービスへの外部トラフィックのルーティングを担当する、クラスターの 入口コントローラーを構成します。",
+						"ko": "외부 트래픽을 클러스터 내의 적절한 서비스로 라우팅하는 작업을 담당하는 클러스터의 Ingress 제어기를 구성합니다.",
+						"pt-BR": "Configura o controlador de ingresso para o cluster, responsável por rotear o tráfego externo para os serviços apropriados dentro do cluster.",
+						"zh-Hans": "为集群配置入口控制器，负责将外部流量路由到集群中的相应服务。",
+						"zh-Hant": "配置叢集的入口控制器，負責將外部資料流量遞送至叢集內的適當服務。"
+					}
+				}
+			],
+			"flavors": [
+				{
+					"label": "QuickStart",
+					"name": "quickstart",
+					"licenses": [],
+					"compliance": {},
+					"iam_permissions": [
+						{
+							"service_name": "cloud-object-storage",
+							"role_crns": [
+								"crn:v1:bluemix:public:iam::::serviceRole:Manager"
+							]
+						},
+						{
+							"service_name": "iam-identity",
+							"role_crns": [
+								"crn:v1:bluemix:public:iam::::role:Administrator",
+								"crn:v1:bluemix:public:iam-identity::::serviceRole:UserApiKeyCreator"
+							]
+						},
+						{
+							"service_name": "kms",
+							"role_crns": [
+								"crn:v1:bluemix:public:iam::::serviceRole:Manager"
+							]
+						},
+						{
+							"service_name": "containers-kubernetes",
+							"role_crns": [
+								"crn:v1:bluemix:public:iam::::role:Administrator"
+							]
+						},
+						{
+							"service_name": "is.vpc",
+							"role_crns": [
+								"crn:v1:bluemix:public:iam::::role:Administrator"
+							]
+						}
+					],
+					"architecture": {
+						"features": [
+							{
+								"title": "Management VPC with one subnet, allow-all ACL and Security Group",
+								"description": "Yes"
+							},
+							{
+								"title": "Workload VPC with two subnets, in two zones, allow-all ACL and Security Group",
+								"description": "Yes"
+							},
+							{
+								"title": "Transit Gateway connecting VPCs",
+								"description": "Yes"
+							},
+							{
+								"title": "One OCP cluster in workload VPC with two worker nodes, public endpoint enabled",
+								"description": "Yes"
+							},
+							{
+								"title": "Key Protect for cluster encryption keys",
+								"description": "Yes"
+							},
+							{
+								"title": "Cloud Object Storage instance (required for cluster)",
+								"description": "Yes"
+							}
+						],
+						"diagrams": [
+							{
+								"diagram": {
+									"url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-ibm-landing-zone/main/reference-architectures/roks-quickstart.drawio.svg",
+									"caption": "Red Hat OpenShift Container Platform on VPC landing zone - QuickStart variation",
+									"type": "image/svg+xml"
+								},
+								"description": "The QuickStart variation of the Red Hat OpenShift Container Platform on VPC landing zone deployable architecture creates one Red Hat OpenShift Container Platform cluster in workload VPC with two worker nodes and public endpoint enabled. The QuickStart variation is designed to help you get started quickly, but is not highly available or validated for the IBM Cloud Framework for Financial Services."
+							}
+						]
+					},
+					"release_notes_url": "https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-secure-infrastructure-vpc-relnotes",
+					"configuration": [
+						{
+							"key": "region",
+							"type": "string",
+							"default_value": "us-south",
+							"description": "Region where VPC will be created. To find your VPC region, use `ibmcloud is regions` command to find available regions.",
+							"required": true,
+							"custom_config": {
+								"type": "vpc_region",
+								"grouping": "deployment",
+								"original_grouping": "deployment",
+								"config_constraints": {
+									"generationType": "2"
+								}
+							},
+							"virtual": false
+						},
+						{
+							"key": "ibmcloud_api_key",
+							"type": "password",
+							"description": "The IBM Cloud platform API key needed to deploy IAM enabled resources.",
+							"required": true,
+							"virtual": false
+						},
+						{
+							"key": "prefix",
+							"type": "string",
+							"default_value": "lz-roks-qs",
+							"description": "A unique identifier for resources that is prepended to resources that are provisioned. Must begin with a lowercase letter and end with a lowercase letter or number. Must be 13 or fewer characters.",
+							"required": false,
+							"virtual": false
+						},
+						{
+							"key": "resource_tags",
+							"type": "array",
+							"default_value": "[]",
+							"description": "Optional list of tags to be added to created resources",
+							"required": false,
+							"virtual": false
+						},
+						{
+							"key": "kube_version",
+							"type": "string",
+							"default_value": "default",
+							"description": "Kubernetes version to use for cluster. To get available versions, use the IBM Cloud CLI command `ibmcloud ks versions`. Also supports passing the string 'default' (current IKS default recommended version).",
+							"required": false,
+							"virtual": false
+						},
+						{
+							"key": "flavor",
+							"type": "string",
+							"default_value": "bx2.4x16",
+							"description": "Machine type for cluster. Use the IBM Cloud CLI command `ibmcloud ks flavors` to find valid machine types",
+							"required": false,
+							"virtual": false
+						},
+						{
+							"key": "entitlement",
+							"type": "string",
+							"default_value": "__NULL__",
+							"description": "Reduces the cost of additional OCP in OpenShift clusters. If you do not have an entitlement, leave as null. Use Cloud Pak with OCP License entitlement to create the OpenShift cluster. Specify `cloud_pak` only if you use the cluster with a Cloud Pak that has an OpenShift entitlement. The value is set only when the cluster is created.",
+							"required": false,
+							"virtual": false
+						}
+					],
+					"terraform_version": "",
+					"outputs": [
+						{
+							"key": "key_management_crn",
+							"description": "CRN for KMS instance"
+						},
+						{
+							"key": "management_cluster_ingress_hostname",
+							"description": "The hostname assigned for the Management cluster ingress subdomain, if not then null."
+						},
+						{
+							"key": "key_management_name",
+							"description": "Name of key management service"
+						},
+						{
+							"key": "workload_rg_name",
+							"description": "Resource group name for the workload resource group used within landing zone."
+						},
+						{
+							"key": "workload_rg_id",
+							"description": "Resource group ID for the workload resource group used within landing zone."
+						},
+						{
+							"key": "workload_cluster_private_service_endpoint_url",
+							"description": "The private service endpoint URL of the Workload cluster, if not then null."
+						},
+						{
+							"key": "prefix",
+							"description": "The prefix that is associated with all resources"
+						},
+						{
+							"key": "management_rg_name",
+							"description": "Resource group name for the management resource group used within landing zone."
+						},
+						{
+							"key": "management_cluster_console_url",
+							"description": "Management cluster console URL, if not then null."
+						},
+						{
+							"key": "transit_gateway_data",
+							"description": "Created transit gateway data"
+						},
+						{
+							"key": "resource_group_names",
+							"description": "List of resource groups names used within landing zone."
+						},
+						{
+							"key": "cluster_data",
+							"description": "List of cluster data"
+						},
+						{
+							"key": "workload_cluster_ingress_hostname",
+							"description": "The hostname assigned for the Workload cluster ingress subdomain, if not then null."
+						},
+						{
+							"key": "vpc_data",
+							"description": "List of VPC data"
+						},
+						{
+							"key": "management_cluster_public_service_endpoint_url",
+							"description": "The public service endpoint URL of the Management cluster, if not then null."
+						},
+						{
+							"key": "vpc_dns",
+							"description": "List of VPC DNS details for each of the VPCs."
+						},
+						{
+							"key": "key_map",
+							"description": "Map of ids and keys for keys created"
+						},
+						{
+							"key": "key_management_guid",
+							"description": "GUID for KMS instance"
+						},
+						{
+							"key": "management_rg_id",
+							"description": "Resource group ID for the management resource group used within landing zone."
+						},
+						{
+							"key": "vpc_names",
+							"description": "A list of the names of the VPC"
+						},
+						{
+							"key": "cluster_names",
+							"description": "List of create cluster names"
+						},
+						{
+							"key": "transit_gateway_name",
+							"description": "The name of the transit gateway"
+						},
+						{
+							"key": "workload_cluster_id",
+							"description": "The id of the workload cluster. If the cluster name does not exactly match the prefix-workload-cluster pattern it will be null."
+						},
+						{
+							"key": "key_rings",
+							"description": "Key rings created by module"
+						},
+						{
+							"key": "resource_group_data",
+							"description": "List of resource groups data used within landing zone."
+						},
+						{
+							"key": "vpc_resource_list",
+							"description": "List of VPC with VSI and Cluster deployed on the VPC."
+						},
+						{
+							"key": "workload_cluster_public_service_endpoint_url",
+							"description": "The public service endpoint URL of the Workload cluster, if not then null."
+						},
+						{
+							"key": "management_cluster_private_service_endpoint_url",
+							"description": "The private service endpoint URL of the Management cluster, if not then null."
+						},
+						{
+							"key": "workload_cluster_console_url",
+							"description": "Workload cluster console URL, if not then null."
+						},
+						{
+							"key": "subnet_data",
+							"description": "List of Subnet data created"
+						},
+						{
+							"key": "config",
+							"description": "Output configuration as encoded JSON"
+						},
+						{
+							"key": "management_cluster_id",
+							"description": "The id of the management cluster. If the cluster name does not exactly match the prefix-management-cluster pattern it will be null."
+						}
+					],
+					"install_type": "fullstack",
+					"scripts": [],
+					"change_notices": {}
+				}
+			]
+		}
+	]
+}
