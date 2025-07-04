@@ -1,5 +1,5 @@
 output "cluster_names" {
- value       = var.cluster_names
+ value       = var.prefix
  description = "List of create cluster names"
 }
 
