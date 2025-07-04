@@ -44,8 +44,8 @@ variable "entitlement" {
   default     = null
 }
 
-variable "cluster_names" {
-  type        = string
-  description = "name"
-}
+# variable "cluster_names" {
+#   type        = string
+#   description = "name"
+# }
 
